@@ -1,0 +1,38 @@
+{
+  "name": "ai-pr-cli",
+  "version": "1.0.0",
+  "description": "Generate Pull Request descriptions from your git diff using OpenAI or OpenRouter",
+  "license": "MIT",
+  "author": "Wallace Luis",
+  "bin": {
+    "ai-pr": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "git",
+    "pull-request",
+    "openai",
+    "openrouter",
+    "ai"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}
