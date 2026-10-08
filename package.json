@@ -15,7 +15,8 @@
     "dev": "tsc --watch",
     "start": "node dist/cli.js",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "node --import tsx --test test/*.test.ts"
   },
   "keywords": [
     "cli",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.19.43",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.3"
   }
 }

@@ -1,5 +1,7 @@
 # ai-pr-cli
 
+[![CI](https://github.com/wallaceluis/ai-pr-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/wallaceluis/ai-pr-cli/actions/workflows/ci.yml)
+
 Generate Pull Request descriptions straight from your `git diff`, using OpenAI or OpenRouter.
 
 `ai-pr` reads the changes in your repository, sends them to an LLM and prints a ready-to-paste Markdown description with a title, summary, list of changes, test steps and notes.
@@ -129,6 +131,7 @@ Your diff is sent to the provider you choose. Review what you are about to send 
 npm run dev        # compile in watch mode
 npm run typecheck  # type-check without emitting
 npm run build      # compile to dist/
+npm test           # unit tests + git integration tests (node:test)
 ```
 
 ## License
